@@ -1,0 +1,155 @@
+<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/305176178550165.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210316%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210316T134350Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D7.html&X-Amz-Signature=1a86207d925aad823834f59c3d8f11a6425645a37f7221f79badf4e58f703e1e -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  
+
+  <style>
+    .myHeading {
+      color: red;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1 onmouseover="changeTitle()">This is the title of the page</h1>
+    <h2>This is the subtitle of the page</h2>
+  </header>
+
+  <main>
+    <hr>
+
+    <ul id="firstList">
+      <li>1st</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+
+    <ul id="secondList">
+      <li>1st</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+
+    <a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/strive.school">This link goes to Strive School</a>
+
+    <div>
+      <p>This text is just for the exercise</p>
+    </div>
+
+    <div>
+      <input type="text" id="input-field" placeholder="input field for the exercise">
+    </div>
+  </main>
+
+  <footer>
+    <p>And this text is just for the exercise too!</p>
+  </footer>
+
+  <script>
+    /* EXERCISE 1
+    Write a function for changing the title of the document to something else.
+    */
+
+    const changeTitle = (selectTitle) => document.getElementsByTagName('h1')[0].innerText = 'This is a new title'
+
+    /* EXERCISE 2
+    Write a function for changing the class of the title of the page in "myHeading".
+    */
+
+    const addClassToTitle = () => document.getElementsByTagName('h1')[0]
+
+        addClassToTitle().addEventListener("click", (event) =>{
+        event.target.classList.add("myHeading")
+      })
+
+    /* EXERCISE 3
+    Write a function for changing the text of only the p which are children of a div.
+    */
+
+  const changePcontent = (function(){
+    let selectDivP = document.querySelector('div p')
+    
+      window.setTimeout((something) => {
+        selectDivP.innerText = something
+      }, 2000,"Hello Carl");
+  }());
+  
+      //
+    
+    /* EXERCISE 4
+    Write a function for changing the destination of every link to https://www.google.com
+    */
+
+    const changeUrls = function () {
+      //
+    };
+
+    /* EXERCISE 5
+     Write a function for adding a new item in the second list.
+     */
+
+    const addToTheSecond = function (content) {
+      //
+    };
+
+    /* EXERCISE 6
+    Write a function for adding a second paragraph to the div.
+    */
+
+    const addParagraph = function (content) {
+      //
+    };
+
+    /* EXERCISE 7
+    Write a function for making the first UL disappear.
+    */
+
+    const firstUlDisappear = function () {
+      //
+    };
+
+    /* EXERCISE 8
+    Write a function for making the background of every UL green.
+    */
+
+    const paintItGreen = function () {
+      //
+    };
+
+    /* EXERCISE 9
+    Make the heading of the page change color every time the user clicks on it.
+    */
+
+    const makeItClickable = function () {
+      //
+    };
+
+    /* EXERCISE 10
+    Change the footer text with something else when the user clicks on it.
+    */
+
+    const changeFooterText = function () {
+      //
+    };
+
+    /* EXERCISE 11
+    Attach an event listener to the input field in the page for console logging its value just after any keystroke.
+    */
+
+    const inputField = document.getElementById("input-field");
+    // ...
+
+    /* EXERCISE 12
+    Create a new welcome alert message when the page successfully loads.
+    */
+
+    window.onload = function () {
+      //
+    };
+
+    /* EXERCISE 13
+    Use HTML5 tags to divide the content of the page in a more semantic way.
+    */
+  </script>
+</body>
+</html>
