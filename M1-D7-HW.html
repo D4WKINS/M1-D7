@@ -81,48 +81,72 @@
     */
 
     const changeUrls = function () {
-      //
-    };
+      let a = document.querySelectorAll('a')
+          a.forEach(link => link.href="https://strive.school/")
+    }
+    changeUrls()
+  
 
     /* EXERCISE 5
      Write a function for adding a new item in the second list.
      */
 
     const addToTheSecond = function (content) {
-      //
+      let sList = document.getElementById('secondList')
+      let li = document.createElement('li')
+      li.innerText = "4th"
+      sList.appendChild(li)
     };
+      addToTheSecond()
 
     /* EXERCISE 6
     Write a function for adding a second paragraph to the div.
     */
 
     const addParagraph = function (content) {
-      //
+      let div = document.querySelector('div p')
+      let p = document.createElement('p')
+      p.innerText ="AWESOME!"
+      div.appendChild(p)
     };
+      // addParagraph()
 
     /* EXERCISE 7
     Write a function for making the first UL disappear.
     */
 
     const firstUlDisappear = function () {
-      //
-    };
+      let fList = document.getElementById('firstList')
+       fList.remove(fList)
+    }
+      firstUlDisappear()
+
 
     /* EXERCISE 8
     Write a function for making the background of every UL green.
     */
 
     const paintItGreen = function () {
-      //
+      let ul = document.querySelectorAll('ul')
+      ul.forEach(ul => ul.style.backgroundColor = "lime")
     };
+      paintItGreen()
 
     /* EXERCISE 9
     Make the heading of the page change color every time the user clicks on it.
     */
 
-    const makeItClickable = function () {
-      //
-    };
+    const makeItClickable = (function () {
+      let heading = document.getElementsByClassName('myHeading')
+            let prices = document.getElementsByClassName("price")
+            let red = Math.floor(Math.random()* 256)
+            let green = Math.floor(Math.random()* 256)
+            let blue = Math.floor(Math.random()* 256)
+
+                heading.addEventListener("onclick",(event)=>{
+                  event.style.color = `rgb(${red}, ${green}, ${blue})`
+                })
+       }());
 
     /* EXERCISE 10
     Change the footer text with something else when the user clicks on it.
