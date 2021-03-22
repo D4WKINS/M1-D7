@@ -33,8 +33,6 @@
 
       }
 
-      div div,
-
       div article {
 
         padding: 10px;
@@ -53,11 +51,11 @@
 
 
 
-      /* #demo {
+       #demo {
 
-        color: yellow
+        color: yellow;
 
-      } */
+      } 
 
     </style>
 
@@ -189,7 +187,7 @@
 
 
 
-      for (let i = 0; i < arrayOfHeadings.length; i++) {
+      {/* for (let i = 0; i < arrayOfHeadings.length; i++) {
 
         // arrayOfHeadings[i] will ALWAYS point to the current element in the array
 
@@ -199,7 +197,7 @@
 
         // arrayOfHeadings[i].remove();
 
-      }
+      } */}
 
 
 
